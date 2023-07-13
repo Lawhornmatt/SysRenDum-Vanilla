@@ -2,7 +2,8 @@
   //      IMPORTS
   // ====================
   
-  //import * as X from "Y";
+  import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+
   
   // ====================
   //  ACCESS HTML BY DOM
@@ -37,3 +38,7 @@
   // ====================
   //      MISC FUNCs
   // ====================
+
+  $("#changeMe").click(function(){
+    $(changeMe).hide();
+  });
