@@ -18,7 +18,7 @@ This is an assessment of my front-end web dev capabilities using only JavaScript
 
 ## USAGE:
 
-This site is deployed on GitHub pages, click here to check it out.
+This site is deployed on GitHub pages, [click here](https://lawhornmatt.github.io/SysRenDum-Vanilla/) to check it out.
 
 ## QUESTIONS:
 
