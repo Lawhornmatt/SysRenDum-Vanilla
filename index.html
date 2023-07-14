@@ -22,13 +22,13 @@
       
     <!-- Scripts  -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/main.js" defer></script>
   </head>
       
-  <body>
+  <body id="thebody" data-bs-theme="light">
 
     <!-- NavBar  -->
-    <nav class="navbar navbar-expand-md bg-stormy navbar-dark">
+    <nav id="navbar" class="navbar navbar-expand-md bg-light navbar-light">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,9 +42,16 @@
           </div>
           <div class="flex-grow-1">
           </div>
-          <button class="text-white nav-item rounded-pill bg-stormy me-3">
-            Theme: Light
-          </button>
+
+          <div class="d-flex align-items-center">
+            <label for="themeSwitch">Dark Mode:</label>
+            <input class="m-2"
+            type="checkbox"
+            role="switch"
+            id="themeSwitch"
+            />
+          </div>
+          
         </div>
       </div>
     </nav>
@@ -66,7 +73,7 @@
     </div>
 
     <!-- About Section  -->
-    <section id="About" class="container-fluid d-flex flex-column justify-content-between text-stormy">
+    <section id="About" class="container-fluid d-flex flex-column justify-content-between">
       <div class="row">
         <h1 class="fst-italic fs-6rem">About Us</h1>
       </div>
@@ -82,7 +89,7 @@
     </section>
 
     <!-- Products Section  -->
-    <section id="Products" class="container-fluid d-flex flex-column justify-content-between text-stormy mt-4">
+    <section id="Products" class="container-fluid d-flex flex-column justify-content-between mt-4">
       <div class="row">
         <h1 class="fst-italic fs-6rem">Products</h1>
       </div>
@@ -236,7 +243,7 @@
     </section>
 
     <!-- Contact Section  -->
-    <section id="Contact" class="container-fluid d-flex flex-column justify-content-between text-stormy">
+    <section id="Contact" class="container-fluid d-flex flex-column justify-content-between">
 
       <div class="row">
         <h1 class="fst-italic fs-6rem">Contact Us</h1>
@@ -294,6 +301,5 @@
 
       </form>
     </section>
-
   </body>
 </html>

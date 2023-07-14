@@ -1,44 +1,27 @@
-// ====================
-  //      IMPORTS
-  // ====================
-  
-  import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
-  
-  // ====================
-  //  ACCESS HTML BY DOM
-  // ====================
-  
-  // var YADA = document.getElementById("YADA");
-  // var YADA = $('.yada');
-  
-  // ====================
-  //   INITIALIZATIONS
-  // ====================
-  
-  // ====================
-  //      FUNCTIONS
-  // ====================
-  
-  //FUNCTION-NAME
-  //What it does
-  
-  // === Specific Part of Function ===
-  
-  //NEXT-FUNCTION
-  //What it does
-  
-  // === Specific Part of Function ===
-  
-  
-  // ====================
-  //      EVENT LISTENERS
-  // ====================
-  
-  // ====================
-  //      MISC FUNCs
-  // ====================
+function darkToggle() {
+  let element = document.body;
+  element.dataset.bsTheme =
+    element.dataset.bsTheme == "dark" ? "light" : "dark";
+}
 
-  $("#changeMe").click(function(){
-    $(changeMe).hide();
-  });
+$(themeSwitch).click(function() {
+  if ($('.divider').hasClass('bg-stormy')) {
+    $('.divider').each(function() {
+      $(this).removeClass('bg-stormy')
+        .addClass('bg-crisp');
+    });
+  } else {
+    $('.divider').each(function() {
+      $(this).removeClass('bg-crisp')
+        .addClass('bg-stormy');
+    });
+  }
+});
+
+$("#themeSwitch").click(darkToggle);
+
+
+
+
