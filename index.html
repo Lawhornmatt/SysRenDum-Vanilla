@@ -70,7 +70,7 @@
       <div class="row">
         <h1 class="fst-italic fs-6rem">About Us</h1>
       </div>
-      <div class="row d-flex flex-column justify-content-between mb-4">
+      <div class="overflow-hidden row d-flex flex-column justify-content-between mb-4">
         <div class="row bg-stormy rounded-pill divider mb-2"></div>
         <div class="row bg-stormy rounded-pill divider"></div>
       </div>
@@ -86,7 +86,7 @@
       <div class="row">
         <h1 class="fst-italic fs-6rem">Products</h1>
       </div>
-      <div class="row d-flex flex-column justify-content-between mb-4">
+      <div class="overflow-hidden row d-flex flex-column justify-content-between mb-4">
         <div class="row bg-stormy rounded-pill divider mb-2"></div>
         <div class="row bg-stormy rounded-pill divider"></div>
       </div>
@@ -188,16 +188,62 @@
 
     <!-- Contact Section  -->
     <section id="Contact" class="container-fluid d-flex flex-column justify-content-between text-stormy">
+
       <div class="row">
         <h1 class="fst-italic fs-6rem">Contact Us</h1>
       </div>
-      <div class="row d-flex flex-column justify-content-between mb-4">
+
+      <div class="overflow-hidden row d-flex flex-column justify-content-between mb-4">
         <div class="row bg-stormy rounded-pill divider mb-2"></div>
         <div class="row bg-stormy rounded-pill divider"></div>
       </div>
-      <div class="row text-left">
-        <p>*Email:</p>
+
+      <!-- <div class="row col-12">
+        <div class="d-flex justify-content-between">
+          <p>*Email:</p>
+          <p>*Email:</p>
+        </div>
       </div>
+      <div class="row col-12">
+        <div class="d-flex justify-content-between">
+          <p>*Email:</p>
+          <p>*Email:</p>
+        </div>
+      </div> -->
+
+      <div class="row text-left">
+        <p class="text-center">Want to talk to us about dumpsters?</p>
+        <p class="text-center">Drop us a line and we will get back to you</p>
+        <p class="text-center fw-light">Asterisk (*) fields are required</p>
+      </div>
+
+      <form class="row p-4" action="/sendemail" method="POST">
+
+        <div class="spaceApart d-flex flex-column flex-sm-row justify-content-around">
+          <label class="" for="email_addy">*Email:</label>
+          <input class="w-75" type="text" placeholder="Email Address" id="email_addy" name="email" required>
+          <div></div>
+        </div>
+
+        <div class="spaceApart d-flex flex-column flex-sm-row justify-content-around">
+          <label class="" for="subj_line">*Subject:</label>
+          <input class="w-75" type="text" placeholder="Email Subject" id="subj_line" name="subj" required>
+          <div></div>
+        </div>
+
+        <div class="spaceApart d-flex flex-column flex-sm-row justify-content-around">
+          <label class="" for="mssg_body">Content:</label>
+          <textarea class="w-75" placeholder="Tell us what you are thinking..." id="mssg_body" name="mssg"></textarea>
+          <div></div>
+        </div>
+
+        <div class="spaceApart container d-flex justify-content-between">
+          <div></div>
+          <button type="submit">Submit</button>
+          <div></div>
+        </div>
+
+      </form>
     </section>
 
   </body>
