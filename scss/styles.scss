@@ -15,9 +15,12 @@ $theme-colors: (
   "stormy": #2D2F46,
   "leafy": #dff4b080,
   "cloudy": #74779A,
+  "hazy": #b3b6d4,
 );
 $font-family-sans-serif: "Karla";
 $font-sizes: (
+  "1ish": 1.5rem,
+  "2rem": 2rem,
   "5rem": 5rem,
   "6rem": 6rem,
 );
@@ -75,8 +78,6 @@ $font-sizes: (
 // Custom styles
 //
 
-// @import "icon-list";
-
 #hero {
   background-image: url(/assets/images/drs-hero.png);
   min-height: 75vh;
@@ -92,7 +93,16 @@ body {
   height: 2000px;
 }
 
-p {
+.indent {
   text-indent: 2rem;
+}
+
+.thumbnail {
+  width: 100%;
+  // max-height: 10rem;
+};
+
+.dumpter {
+  min-height: 12.5rem;
 }
 
