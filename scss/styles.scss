@@ -80,7 +80,7 @@ $font-sizes: (
 //
 
 #hero {
-  background-image: 'url(https://./assets/images/drs-hero.png)';
+  background-image: url(/assets/images/drs-hero.png);
   min-height: 75vh;
   object-fit: cover;
 }
