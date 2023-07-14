@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-  <html lang="en">
-      
+<html lang="en">
+    
   <head>
     <!-- Boilerplate Metatags -->
     <meta charset="UTF-8">
@@ -17,26 +17,52 @@
     <title>DRS Assessment</title>
     <link rel="icon" href="./assets/images/default.ico" type="image/x-icon">
       
-    <!-- My CSS  -->
-    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+    <!-- CSS  -->
     <link rel="stylesheet" href="css/styles.css">
       
-    <!-- My JS Script  -->
-    <!-- <script src="./libs/main.js" type="module" defer></script> -->
+    <!-- Scripts  -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script type="module" src="js/main.js"></script>
   </head>
       
   <body>
-  
-    <!-- ==================== -->
-    <!--      HEADER          -->
-    <!-- ==================== -->
-      
-    <!-- ==================== -->
-    <h1>SPLASH TEXT</h1>
-    <p id="changeMe">Change Me with JQuery</p>
-    <!-- ==================== -->
-  
+
+    <nav class="navbar navbar-expand-sm bg-stormy g-0">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav d-flex justify-content-between">
+          <li class="nav-item bg-cloudy rounded ms-2">
+            <a class="text-leafy nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item bg-cloudy rounded ms-2">
+            <a class="text-leafy nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item bg-cloudy rounded ms-2">
+            <a class="text-leafy nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item bg-cloudy rounded ms-2">
+            <a class="text-leafy nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <div id="hero" class="bg-img container-fluid d-flex flex-column justify-content-between">
+      <div class="row text-leafy d-sm-none">
+        <img id='logo' src="assets/images/drs-logo.png" class="img" alt="logo"/>
+      </div>
+      <div class="row text-leafy d-none d-sm-flex">
+        <img id='logo' src="assets/images/drs-logo.png" class="img w-25" alt="logo"/>
+      </div>
+      <div class="row text-white fw-bold text-center">
+        <h1>Unique Selling Point (USP)</h1>
+        <h2>Conversion Goal</h2>
+      </div>
+      <div class="row">
+      </div>
+    </div>
+
   </body>
-  </html>
+</html>
