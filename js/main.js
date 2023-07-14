@@ -12,11 +12,13 @@ $(themeSwitch).click(function() {
       $(this).removeClass('bg-stormy')
         .addClass('bg-crisp');
     });
+    $(navbar).removeClass('bg-light', 'navbar-light').addClass('bg-stormy','text-light');
   } else {
     $('.divider').each(function() {
       $(this).removeClass('bg-crisp')
         .addClass('bg-stormy');
     });
+    $(navbar).removeClass('bg-stormy','text-light').addClass('bg-light', 'navbar-light');
   }
 });
 
