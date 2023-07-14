@@ -8,15 +8,19 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
 // Customize some defaults
 $body-color: #2D2F46;
-$body-bg: #dff4b080;
+$body-bg: #fff;
 $border-radius: .4rem;
 $success: #7952b3;
 $theme-colors: (
   "stormy": #2D2F46,
-  "leafy": #DFF4B0,
+  "leafy": #dff4b080,
   "cloudy": #74779A,
 );
 $font-family-sans-serif: "Karla";
+$font-sizes: (
+  "5rem": 5rem,
+  "6rem": 6rem,
+);
 
 
 
@@ -74,12 +78,21 @@ $font-family-sans-serif: "Karla";
 // @import "icon-list";
 
 #hero {
-  background-image: url(/assets/images/hero.jpg);
+  background-image: url(/assets/images/drs-hero.png);
   min-height: 75vh;
   object-fit: cover;
 }
 
+.divider {
+  height: 1rem;
+  transform: translateX(25vw);
+}
+
 body {
   height: 2000px;
+}
+
+p {
+  text-indent: 2rem;
 }
 

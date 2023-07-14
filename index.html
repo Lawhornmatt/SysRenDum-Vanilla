@@ -27,21 +27,27 @@
       
   <body>
 
+    <!-- NavBar  -->
     <nav class="navbar navbar-expand-sm bg-stormy g-0">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav d-flex justify-content-between">
-          <li class="nav-item bg-cloudy rounded ms-2">
-            <a class="text-leafy nav-link active" href="#">Home</a>
+      <div class="collapse navbar-collapse d-flex" id="navbarNavAltMarkup">
+        <ul class="navbar-nav d-flex justify-content-between flex-fill">
+          <li class="nav-item bg-cloudy rounded-pill ms-3 active">
+            <a class="text-white nav-link" href="#Home">Home</a>
           </li>
-          <li class="nav-item bg-cloudy rounded ms-2">
-            <a class="text-leafy nav-link" href="#">About Us</a>
+          <li class="nav-item bg-cloudy rounded-pill ms-3">
+            <a class="text-white nav-link" href="#About">About Us</a>
           </li>
-          <li class="nav-item bg-cloudy rounded ms-2">
-            <a class="text-leafy nav-link" href="#">Products</a>
+          <li class="nav-item bg-cloudy rounded-pill ms-3">
+            <a class="text-white nav-link" href="#Products">Products</a>
           </li>
-          <li class="nav-item bg-cloudy rounded ms-2">
-            <a class="text-leafy nav-link" href="#">Contact</a>
+          <li class="nav-item bg-cloudy rounded-pill ms-3">
+            <a class="text-white nav-link" href="#Contact">Contact</a>
           </li>
+          <li class="nav-item flex-grow-1">
+          </li>
+          <button class="text-white nav-item rounded-pill bg-stormy me-3">
+            Theme: Light
+          </button>
         </ul>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +55,8 @@
       </button>
     </nav>
 
-    <div id="hero" class="bg-img container-fluid d-flex flex-column justify-content-between">
+    <!-- Herosplash  -->
+    <div id="hero" class="bg-img container-fluid d-flex flex-column justify-content-between shadow">
       <div class="row text-leafy d-sm-none">
         <img id='logo' src="assets/images/drs-logo.png" class="img" alt="logo"/>
       </div>
@@ -63,6 +70,22 @@
       <div class="row">
       </div>
     </div>
+
+    <!-- About Section  -->
+    <section id="About" class="container-fluid d-flex flex-column justify-content-between text-stormy">
+      <div class="row">
+        <h1 class="fst-italic fs-6rem">About Us</h1>
+      </div>
+      <div class="row d-flex flex-column justify-content-between mb-4">
+        <div class="row bg-stormy rounded-pill divider mb-2"></div>
+        <div class="row bg-stormy rounded-pill divider"></div>
+      </div>
+      <div class="row text-left">
+        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.</p>
+        <p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. The first two words themselves are a truncation of 'dolorem ipsum' ('pain itself').</p>
+        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.</p>      
+      </div>
+    </section>
 
   </body>
 </html>
