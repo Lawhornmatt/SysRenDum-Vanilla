@@ -14,7 +14,7 @@
 
 This is the ReadMe for Matthew Lawhorn's project titled: DRS Assessment  
 This is an assessment of my front-end web dev capabilities using only JavaScript, CSS/HTML, Bootstrap and jQuery.  
-<img src='INSERT PATH TO SCREENSHOT HERE' alt='A screenshot of the splash screen'/>  
+<img src='assets/images/finishedscrnsht.png' style='max-width: 50vw' alt='A screenshot of the splash screen'/>  
 
 ## USAGE:
 
